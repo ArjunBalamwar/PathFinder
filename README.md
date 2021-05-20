@@ -34,11 +34,11 @@ As seen in the above graph, before a node reaches on the 5th node (end node), th
 Modified A-star, like A* uses the same idea of using g and h for measuring the cost of each node, is similar to DFA* in terms of it’s goal (increasing the efficiency= pathlength/ number of nodes visited). But it the f value is different from  DFA*. It initially spreads from the starting node, and once it is sure in which direction to go in, it behaves similar to DFA*. Comparing it with A* and DFA*, it will have the pathlength greater than or equal to A* while it might be less than DFA*. 
 How it works:
 g and f value is the same as shown in A*
-But here f = g^(h)
+But here f = g^(h * g)
 Hence as the current node gets close to the end node, the cost first increases and then starts to decreases
 Let distance between starting and ending node = 5
 
- ![image](https://user-images.githubusercontent.com/62883997/118373280-9eb01980-b5d3-11eb-812b-92d03fd9fda6.png)
+ ![image](https://user-images.githubusercontent.com/62883997/118999199-b4448b00-b9a7-11eb-80d2-521bc0a0c596.png)
 
 As seen in the above graph, before a node reaches on the 5th node (end node), the cost first increases drastically, which makes the algorithm to spread, and later the cost decreases due to which the efficiency increases
 
